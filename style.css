@@ -1,5 +1,6 @@
 :root {
   --dark-gold: rgb(171, 171, 35);
+  --maroon-dark: #800000;
 }
 /*
   Josh's Custom CSS Reset
@@ -15,8 +16,6 @@
 * {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #272727;
-  color: var(--dark-gold);
 }
 
 body {
@@ -57,8 +56,57 @@ h6 {
 
 header {
   display: flex;
+  color: var(--dark-gold);
+  background-color: var(--maroon-dark, #800000);
   justify-content: center;
+  padding: 1rem 0rem;
   & .headerTitle {
+    background-color: transparent;
     font-size: 2rem;
+  }
+}
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 3rem;
+  padding: 1rem;
+  background-color: #7b7878;
+}
+.card {
+  background-color: #f2d1c9;
+  border: 1px solid var(--dark-gold);
+  border-radius: 1rem;
+  width: 70%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardHeader {
+  text-align: center;
+  color: black;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+  width: 100%;
+  background-color: #c19e96;
+}
+.cardDetails {
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  & a,
+  a:visited {
+    text-decoration: underline;
+    color: white;
+    background-color: transparent;
   }
 }
