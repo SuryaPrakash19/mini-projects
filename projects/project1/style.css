@@ -52,6 +52,9 @@ header {
     opacity: 0;
     transition: opacity linear 300ms;
   }
+  &:hover {
+    scale: 1.01;
+  }
 }
 .active {
   flex: 15;

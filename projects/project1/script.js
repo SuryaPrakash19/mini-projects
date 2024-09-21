@@ -1,7 +1,7 @@
 const panels = document.getElementsByClassName("panel");
 
 for (let element of panels) {
-  element.addEventListener("mouseenter", () => {
+  element.addEventListener("click", () => {
     for (let e of panels) {
       e.classList.remove("active");
     }

@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #2d2d2d;
+}
 #contentSection {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -10,10 +13,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 89vh;
+
   overflow: hidden;
 }
 header {
+  z-index: 3;
+  position: relative;
   flex-direction: column;
   align-items: center;
   & a,
@@ -22,4 +27,68 @@ header {
     background-color: transparent;
     align-self: flex-start;
   }
+}
+#contentSection {
+  width: 100%;
+
+  background-color: #f9f9f9;
+  transform-origin: 0% 0%;
+  transition: transform 1s ease;
+}
+
+.rotate20 {
+  transform: rotate(-20deg);
+}
+
+.article1 {
+  width: 60%;
+}
+.svg {
+  height: 2rem;
+}
+.pic > img {
+  width: 100%;
+}
+.navButton {
+  position: absolute;
+  z-index: 2;
+  align-self: flex-start;
+  background-color: #f97a6a;
+  width: 10rem;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  transform: translateY(-50%) translateX(-50%) rotate(0deg);
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  transition: transform 1s ease;
+}
+.rotate90 {
+  transform: translateY(-50%) translateX(-50%) rotate(-90deg);
+}
+.navSection {
+  position: absolute;
+  width: min-content;
+  z-index: 10;
+  top: 30rem;
+  left: 1rem;
+  & h5 {
+    padding: 1rem;
+    font-weight: 400;
+  }
+}
+.navLevel {
+  transition: transform 1s ease, opacity 1s ease-in;
+  color: white;
+  display: flex;
+  opacity: 0;
+  transform: translateX(-400px);
+}
+.translateX {
+  opacity: 1;
+  transform: translateX(0px);
 }
