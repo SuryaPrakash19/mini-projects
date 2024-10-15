@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu");
+
+* {
+  box-sizing: border-box;
+}
+#contentSection {
+  font-family: "Ubuntu";
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 89vh;
+  overflow: hidden;
+}
+header {
+  flex-direction: column;
+  align-items: center;
+  & a,
+  a:visited {
+    color: white;
+    background-color: transparent;
+    align-self: flex-start;
+  }
+}
+
+#backgroundImage {
+  top: -30px;
+  right: -30px;
+  height: calc(100vh + 60px);
+  width: calc(100vw + 60px);
+  margin: 0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg/1024px-Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  filter: blur(-10px);
+}
+.loadingText {
+  position: absolute;
+  z-index: 2;
+  font-size: 3rem;
+  color: white;
+}
