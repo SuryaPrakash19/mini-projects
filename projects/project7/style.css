@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+#contentSection {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  position: relative;
+  justify-content: start;
+  align-items: center;
+  height: 89vh;
+  overflow: hidden;
+}
+header {
+  flex-direction: column;
+  align-items: center;
+  & a,
+  a:visited {
+    color: white;
+    background-color: transparent;
+    align-self: flex-start;
+  }
+}
+#mainPage {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+  font-weight: bold;
+  width: 100vw;
+  height: 100%;
+}
+.sideNav {
+  background-color: white;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  min-width: 400px;
+  padding: 2rem;
+  max-width: 400px;
+  height: 100%;
+  transition: transform 300ms ease;
+}
+.sideNav1 {
+  background-color: #f2271c;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  width: 415px;
+  height: 100vh;
+  transition: transform 300ms ease;
+}
+.sideNav2 {
+  background-color: #201e20;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  width: 425px;
+  height: 100%;
+
+  transition: transform 300ms ease;
+}
+.moveLeft {
+  transform: translateX(-100%);
+}
+
+.navContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1rem;
+  font-size: large;
+  font-weight: 500;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.flexcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#menuIcon {
+  position: absolute;
+  z-index: 2;
+  width: 3rem;
+  margin: 1rem;
+  height: 3rem;
+  fill: black;
+}
+.navOpened {
+  transform: translateX(0%);
+}
