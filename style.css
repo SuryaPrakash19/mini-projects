@@ -81,7 +81,6 @@ header {
   border-radius: 1rem;
   width: 70%;
   aspect-ratio: 4/2;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,6 +94,8 @@ header {
   text-decoration: none;
   width: 100%;
   background-color: rgb(216, 213, 213);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .cardDetails {
   display: flex;
