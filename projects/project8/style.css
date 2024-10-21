@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+#contentSection {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 89vh;
+  overflow: hidden;
+}
+header {
+  flex-direction: column;
+  align-items: center;
+  & a,
+  a:visited {
+    color: white;
+    background-color: transparent;
+    align-self: flex-start;
+  }
+}
+.chatHead {
+  background-color: #3352d6;
+  padding: 1rem;
+  color: white;
+}
+#searchBox {
+  width: 100%;
+  background-color: #223a94;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.1rem 0.5rem;
+  margin-top: 5px;
+}
+.chatBox {
+  width: 25%;
+  min-width: 320px;
+  border-radius: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 2px rgb(220, 215, 215) solid;
+  border-right: 5px rgb(220, 215, 215) solid;
+  border-bottom: 5px rgb(220, 215, 215) solid;
+}
+.chats {
+  min-height: 500px;
+  height: 50vh;
+  overflow-y: scroll;
+}
+.chat {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 1rem 1fr;
+}
+.profilePic {
+  grid-row-start: 1;
+  margin-left: 1rem;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  background-color: purple;
+  border-radius: 50%;
+}
+.displayNone {
+  display: none;
+}
